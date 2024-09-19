@@ -1,0 +1,25 @@
+public class MonthlyCCBalance {
+    public static void main(String[] args) {
+
+        double balance = 5000.00;
+        double annualIntRate = 0.17;
+
+        double monthlyIntRate = annualIntRate / 12;
+
+            double interestAfterOneMonth = balance * monthlyIntRate;
+
+                double balanceAfterOneMonth = balance + interestAfterOneMonth;
+
+
+        double interestAfterTwoMonths = balanceAfterOneMonth * monthlyIntRate;
+
+            double balanceAfterTwoMonths = balanceAfterOneMonth + interestAfterTwoMonths;
+
+        System.out.println("Initial balance: $" + balance);
+            System.out.println("Interest after one month: $" + interestAfterOneMonth);
+        System.out.println("Balance after one month: $" + balanceAfterOneMonth);
+            System.out.println("Interest after two months: $" + interestAfterTwoMonths);
+        System.out.println("Balance after two months: $" + balanceAfterTwoMonths);
+
+    }
+}
